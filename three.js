@@ -16,7 +16,7 @@ document.body.appendChild(renderer.domElement);
 // Load OBJ model
 const loader = new OBJLoader();
 loader.load(
-    'path/to/your/model.obj',
+    'FinalBaseMesh.obj',
     function (obj) {
         scene.add(obj);
     },
