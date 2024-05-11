@@ -19,7 +19,7 @@ function addCube() {
     const geometry = new THREE.BoxGeometry();
 
     // Create a basic material with color
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Red color
 
     // Combine the geometry and material into a mesh
     cube = new THREE.Mesh(geometry, material);
