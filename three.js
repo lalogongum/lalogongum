@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 
 // Create a scene
 const scene = new THREE.Scene();
@@ -13,12 +13,12 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-// Load GLTF model
-const loader = new GLTFLoader();
+// Load OBJ model
+const loader = new OBJLoader();
 loader.load(
-    'Wolf-Blender-2.82a.glb',
-    function (gltf) {
-        scene.add(gltf.scene);
+    'path/to/your/model.obj',
+    function (obj) {
+        scene.add(obj);
     },
     undefined,
     function (error) {
