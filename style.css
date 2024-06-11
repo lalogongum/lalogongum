@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FBE9E8;
+    color: black;
+    font-size: 1rem; /* Set a base font size for responsiveness */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px; /* 20px to rm */
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding:  14px 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.container {
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#greeting, .name, .aboutMe {
+    margin: 0;
+}
+
+.greeting {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* 24px to rm */
+    color: black;
+}
+
+.name {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 3.125rem; /* 50px to rm */
+    color: black;
+}
+
+.aboutMe {
+    position: absolute;
+    top: 36%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 0.875rem; /* 14px */
+    color: black;
+}
+
+.styled-image {
+    position: absolute;
+    top: 68%; /* Adjust as needed */
+    left: 45%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 15rem; /* 240px */
+    height: auto;
+    border: 0.3125rem solid black; /* 5px */
+    border-radius: 1.25rem; /* 20px */
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px */
+    margin: 1.25rem; /* 20px */
+}
