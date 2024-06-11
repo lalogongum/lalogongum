@@ -3,66 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FBE9E8;
-            color: black;
-    }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            /* Remove padding-right: 600px; */
-    }
-
-    .navbar-content {
-        display: flex;
-        justify-content: space-between;
-        max-width: 80%; /* Set a maximum width for the navbar content */
-        width: 100%; /* Ensure content fills the available width */
-    }
-
-    .navbar a {
-        text-decoration: none;
-        color: #333;
-        padding: 14px 20px; /* Adjust padding for smaller screens */
-        white-space: nowrap; /* Prevent text wrapping */
-        overflow: hidden; /* Hide overflowing text */
-        text-overflow: ellipsis; /* Show ellipsis for long text */
-    }
-        .container {
-            text-align: center;
-            padding-top: 100px;
-        }
-        .greeting {
-            font-size: 2em;
-        }
-        .subtitle {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-        .input-field {
-            width: 300px;
-            height: 50px;
-            margin-top: 20px;
-            background-color: #ddd;
-            border: none;
-            padding: 10px;
-        }
-    </style>
+    <title>Scrolling Navbar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="navbar">
-    <a href="#">HOME</a>
-    <a href="#">ABOUT</a>
-    <a href="#">CONTACT</a>
+<div class="navbar" id="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">Portfolio</a>
+    <a href="#contact">Contact</a>
 </div>
-<div class="container">
-    <p class="greeting">Hello! I'm Hasan</p>
-    <p class="subtitle">3D artist and web developer</p>
-    <div class="input-field"></div> <!-- This can be an input or button element -->
+
+<div id="home" class="container">
+    <p class="greeting">Hello!</p>
+    <p class="name">I'm Hasan</p>
+    <p class="aboutMe">A 3D artist and a full stack developer</p>
+    <img src="bigman.JPEG" alt="my handsome ass" class="styled-image">
 </div>
+
+<div id="about" class="section">
+    <h1>About Me</h1>
+    <p>This is some information about me.</p>
+</div>
+
+<div id="contact" class="section">
+    <h1>Contact</h1>
+    <p>This is the contact section.</p>
+</div>
+
+<script src="p5.js"></script>
 </body>
 </html>
