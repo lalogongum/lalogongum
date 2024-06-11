@@ -87,6 +87,55 @@ body {
     height: auto;
     border: 0.3125rem solid black; /* 5px */
     border-radius: 1.25rem; /* 20px */
-    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1); /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* Color #D6C3F5 */
     margin: 1.25rem; /* 20px */
 }
+
+#Portfolio {
+    background-color: #FBE9E8;
+    padding: 5px;
+}
+
+#Portfolio h1 {
+    color: black;
+    font-size: 27px;
+    position: absolute;
+    top: 105%; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.flappyHeading {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 117%; /* Adjust as needed */
+    left: 25%; /* Center horizontally */
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.flappyBody {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 122%; /* Adjust as needed */
+    left: 37%; /* Center horizontally */
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+#Portfolio img {
+    position: absolute;
+    top: 160%; /* Adjust as needed */
+    left: 44%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 1.25rem; /* 20px */
+}
+
+
+
