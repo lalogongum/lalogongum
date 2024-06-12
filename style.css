@@ -162,8 +162,9 @@ body {
     color: black;
     position: absolute;
     text-align: center;
+    font-size: 15px;
     top: 190%;
-    left: 25%;
+    left: 23%;
     font-weight: 600;
     transform: translateX(-50%);
 }
@@ -205,7 +206,7 @@ body {
 
 #Portfolio2 img {
     position: absolute;
-    top: 235%; /* Adjust as needed */
+    top: 236%; /* Adjust as needed */
     left: 44%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     width: 280px;
@@ -216,6 +217,37 @@ body {
     margin: 1.25rem; /* 20px */
 }
 
+.blenderHeading{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 260%;
+    left: 23%;
+    font-size: 15px;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+.blenderBody{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    top:265%; /* Adjust as needed */
+    left: 37%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+#Portfolio2 video {
+    position: absolute;
+    top: 300%; /* Adjust as needed */
+    left: 44%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 20px; /* Adjust as needed */
+}
 
 
 
