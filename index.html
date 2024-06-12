@@ -1,43 +1,224 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daddy Hasan</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FBE9E8;
+    color: black;
+    font-size: 1rem; /* Set a base font size for responsiveness */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
 
-</head>
-<body>
-<div class="navbar" id="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#Portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</div>
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px; /* 20px to rm */
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    z-index: 1000;
+}
 
-<div id="home" class="container">
-    <p class="greeting">Hello!</p>
-    <p class="name">I'm Hasan</p>
-    <p class="aboutMe">A 3D artist and a full stack developer</p>
-    <img src="bigman.JPEG" alt="my handsome ass" class="styled-image">
-</div>
+.navbar a {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding:  14px 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
 
-<div id="Portfolio" class="section">
-    <h1>My Portfolio</h1>
-    <p class="flappyHeading">Flappy bird clone</p>
-    <p class="flappyBody">Designed with three challenging levels, this Flappy Bird clone, powered by p5.js, promises an engaging experience. How high can you soar?</p>
-    <a href="https://editor.p5js.org/lalogum/full/OH6kwALGw" target="_blank">
-        <img src="flappybird.png" alt="Description of the image">
-    </a>
-</div>
+.container {
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#greeting, .name, .aboutMe {
+    margin: 0;
+}
+
+.greeting {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* 24px to rm */
+    color: black;
+}
+
+.name {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: 3.125rem; /* 50px to rm */
+    color: black;
+}
+
+.aboutMe {
+    position: absolute;
+    top: 36%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 0.875rem; /* 14px */
+    color: black;
+}
+
+.styled-image {
+    position: absolute;
+    top: 68%; /* Adjust as needed */
+    left: 45%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 15rem; /* 240px */
+    height: auto;
+    border: 0.3125rem solid black; /* 5px */
+    border-radius: 1.25rem; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* Color #D6C3F5 */
+    margin: 1.25rem; /* 20px */
+}
+
+#Portfolio {
+    background-color: #FBE9E8;
+    padding: 5px;
+}
+
+#Portfolio h1 {
+    color: black;
+    font-size: 27px;
+    position: absolute;
+    top: 105%; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.flappyHeading {
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 117%; /* Adjust as needed */
+    left: 25%; /* Center horizontally */
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.flappyBody {
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    top: 122%; /* Adjust as needed */
+    left: 37%; /* Center horizontally */
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+#Portfolio img {
+    position: absolute;
+    top: 165%; /* Adjust as needed */
+    left: 44%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 1.25rem; /* 20px */
+}
+
+.playFlappy{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 138%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.noteFlappy{
+    color: black;
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    top: 143%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+.runnerHeading{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 190%;
+    left: 25%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+.runnerBody{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    top: 195%; /* Adjust as needed */
+    left: 37%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+#Portfolio2 {
+    background-color: #FBE9E8;
+    padding: 5px;
+}
+
+.runnerPlay{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 212%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.runnerNote{
+    color: black;
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    top: 217%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+#Portfolio2 img {
+    position: absolute;
+    top: 235%; /* Adjust as needed */
+    left: 44%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 1.25rem; /* 20px */
+}
 
 
-<div id="contact" class="section">
-    <h1>Contact</h1>
-    <p>This is the contact section.</p>
-    <p> </p>
-</div>
 
-<script src="script.js"></script>
-</body>
-</html>
+
+
+
+
