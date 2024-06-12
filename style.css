@@ -117,7 +117,7 @@ body {
 
 .flappyBody {
     color: black;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     top: 122%; /* Adjust as needed */
     left: 37%; /* Center horizontally */
@@ -126,7 +126,7 @@ body {
 
 #Portfolio img {
     position: absolute;
-    top: 160%; /* Adjust as needed */
+    top: 165%; /* Adjust as needed */
     left: 44%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     width: 280px;
@@ -136,6 +136,89 @@ body {
     box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
     margin: 1.25rem; /* 20px */
 }
+
+.playFlappy{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 138%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.noteFlappy{
+    color: black;
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    top: 143%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+.runnerHeading{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 190%;
+    left: 25%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+.runnerBody{
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    top: 195%; /* Adjust as needed */
+    left: 37%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+#Portfolio2 {
+    background-color: #FBE9E8;
+    padding: 5px;
+}
+
+.runnerPlay{
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: 212%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+}
+
+.runnerNote{
+    color: black;
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    top: 217%;
+    left: 47%;
+    font-weight: 600;
+    transform: translateX(-50%);
+}
+
+#Portfolio2 img {
+    position: absolute;
+    top: 235%; /* Adjust as needed */
+    left: 44%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 1.25rem; /* 20px */
+}
+
+
+
+
 
 
 
