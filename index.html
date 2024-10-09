@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan kerret portfolio</title>
+    <title>Hasan Kerret Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
@@ -118,6 +118,18 @@ function scrollToAboutMe() {
     const aboutMeSection = document.getElementById('AboutMe');
     aboutMeSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 </script>
 <script src="script.js"></script>
 </body>
