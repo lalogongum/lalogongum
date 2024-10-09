@@ -127,6 +127,10 @@
 </div>
 
 <script>
+    function scrollToAboutMe() {
+    const aboutMeSection = document.getElementById('AboutMe');
+    aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+}
  document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
