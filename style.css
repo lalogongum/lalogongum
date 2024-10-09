@@ -301,7 +301,7 @@ font-weight: 100;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
-    height: 350vh;
+    height: 410vh;
 
 }
 
@@ -483,7 +483,7 @@ font-weight: 100;
 
 .blenderHeading{
     position: absolute;
-    top: 465%;
+    top: 550%;
     left: 10%;
     font-size: 18px;
     font-weight: 700;
@@ -493,16 +493,16 @@ font-weight: 100;
 
 .blenderBody{
     position: absolute;
-    top: 470%;
+    top: 555%;
     left: 10%;
     color: black;
     font-size: 18px;
     font-weight: 700;
 }
 
-#portfolio video {
+.blenderVideo {
     position: absolute;
-    top: 500%; /* Adjust as needed */
+    top: 590%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     width: 340px;
@@ -514,20 +514,52 @@ font-weight: 100;
 }
 
 
+
+
+.maxMsp{
+    position: absolute;
+    top: 465%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    color: purple;
+    text-shadow:
+}
+
+.maxMspDescription{
+    position: absolute;
+    top: 470%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.maxMspVideo {
+    position: absolute;
+    top: 515%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: auto;
+    border: 5px solid black; /* 5px */
+    border-radius: 20px; /* 20px */
+    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+    margin: 20px; /* Adjust as needed */
+}
 #contact {
     width: 90%;
     margin: 50px auto; /* Center the section */
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
-    height: 40vh;
+    height: 35vh;
 
 }
-
 #contact h1 {
     font-size: 35px;
     position: absolute;
-    top: 565%;
+    top: 625%;
     left: 48%;
     color: #bc0000;
     font-weight: 700;
@@ -536,7 +568,7 @@ font-weight: 100;
 
 .phoneNumber{
     position: absolute;
-    top: 577%;
+    top: 636%;
     left: 47.3%;
     font-size: 18px;
     font-weight: 700;
@@ -547,7 +579,7 @@ font-weight: 100;
 
 .email{
     position: absolute;
-    top: 582%;
+    top: 640%;
     left: 44%;
     font-size: 18px;
     font-weight: 700;
