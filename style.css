@@ -1,37 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FBE9E8;
+    background-color: #f8f8f8;
     color: black;
     font-size: 1rem; /* Set a base font size for responsiveness */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
-
 .navbar {
     display: flex;
-    justify-content: center;
-    padding: 15px; /* 20px to rm */
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    top: 0px;
-    z-index: 1000;
+   justify-content: center;
+   padding: 15px;
+   position: static;
+   width: 98%; /* Set the width to 50% of the viewport */
+   z-index: 1000;
+   background-color: white; /* Make it transparent or set a color */
+
 }
 
 .navbar a {
     font-family: Roboto, sans-serif;
     text-decoration: none;
-    color: white;
-    padding:  14px 20px;
-    font-weight: 400;
-    font-size: 13px;
+    color: black;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 18px;
+
+
 }
 
 .container {
     text-align: center;
-    padding-top: 100px;
-    height: 100vh; /* Full viewport height */
+    height: 86vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,209 +39,473 @@ body {
 }
 
 .section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-}
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #f4f4f4;
+     }
 
-#greeting, .name, .aboutMe {
+#greeting, .name, .name2, .aboutMe, .aboutMe2 {
     margin: 0;
 }
 
 .greeting {
     position: absolute;
-    top: 20%;
-    left: 16%;
+    top: 27%;
+    left: 15.2%;
+    letter-spacing: 0.2rem;
     transform: translateY(-50%);
-    font-size: 1.5rem; /* 24px to rm */
-    color: black;
+    font-size: 2rem; /* 24px to rm */
+    color: #000724;
+    font-weight = 300;
+
 }
 
 .name {
     position: absolute;
-    top: 30%;
-    left: 15%;
+    top: 42%;
+    left: 14.87%;
+    letter-spacing: 0.2rem;
     transform: translateY(-50%);
-    font-size: 3.125rem; /* 50px to rm */
-    color: black;
+    font-size: 5.125rem; /* 50px to rm */
+    color: #ff7704;
+    font-weight: 50;
+
 }
 
+.Im{
+color: black;
+font-weight: 100;
+}
 .aboutMe {
     position: absolute;
-    top: 36%;
-    left: 16%;
+    top: 53%;
+    left: 15.2%;
     transform: translateY(-50%);
-    font-size: 0.875rem; /* 14px */
-    color: black;
-}
+    letter-spacing: 0.2rem;
+    font-size: 3rem; /* 14px */
+    color: #bc0000;
+    font-weight : 700;
+ }
+ .first-word {
+   color: black;
+   font-weight: 100;
+ }
+
+ .last-word {
+   color: black;
+   font-weight: 100;
+
+ }
+ .aboutMe2 {
+     position: absolute;
+     top: 59.5%;
+     left: 15.2%;
+     transform: translateY(-50%);
+     letter-spacing: 0.2rem;
+     font-size: 3rem; /* 14px */
+     color: #bc0000; /* Make the text transparent */
+    font-weight: 550;
+  }
+
+
 
 .styled-image {
+
     position: absolute;
-    top: 68%; /* Adjust as needed */
-    left: 45%; /* Adjust as needed */
+    top: 52%; /* Adjust as needed */
+    left: 70%; /* Adjust as needed */
     transform: translate(-50%, -50%); /* Center the image */
-    width: 15rem; /* 240px */
-    height: auto;
+    width: 20rem; /* 240px */
+    height: 20rem;
     border: 0.3125rem solid black; /* 5px */
-    border-radius: 1.25rem; /* 20px */
-    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* Color #D6C3F5 */
+    border-radius: 50%; /* 20px */
+    box-shadow: 0 0 50px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
     margin: 1.25rem; /* 20px */
+    object-fit: cover;
 }
-
-#Portfolio {
-    background-color: #FBE9E8;
-    padding: 5px;
-}
-
-#Portfolio h1 {
-    color: black;
-    font-size: 27px;
+.rounded-button {
     position: absolute;
-    top: 105%; /* Adjust as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+    top: 68%;
+    left: 15.2%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #11017b;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
+    transition: background-color 0.3s;
 }
-
-.flappyHeading {
-    color: black;
-    font-size: 15px;
+.rounded-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.tiktokImage {
     position: absolute;
-    top: 117%; /* Adjust as needed */
-    left: 25%; /* Center horizontally */
-    font-weight: 600;
-    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+    top: 78%; /* Adjust as needed */
+    left: 15.2%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 2.8rem; /* 240px */
+    height: 2.8rem;
+    margin: 1.25rem; /* 20px */
+    object-fit: cover;
 }
 
-.flappyBody {
+.linkedIn {
+    position: absolute;
+    top: 78%; /* Adjust as needed */
+    left: 18%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 2rem; /* 240px */
+    height: 2rem;
+    margin: 1.25rem;
+    object-fit: cover;
+}
+
+.github {
+    position: absolute;
+    top: 78%; /* Adjust as needed */
+    left: 21%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 3.2rem; /* 240px */
+    height: 3.2rem;
+    margin: 1.25rem;
+    object-fit: cover;
+}
+
+.instagram {
+    position: absolute;
+    top: 78%; /* Adjust as needed */
+    left: 24%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 2rem; /* 240px */
+    height: 2rem;
+    margin: 1.25rem;
+    object-fit: cover;
+}
+
+/* About Me Section */
+#AboutMe {
+    width: 90%;
+    margin: 20px auto; /* Center the section */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
+    height: 50vh;
+}
+
+#AboutMe h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 105%;
+    left: 45%;
+    color: #bc0000;
+    font-weight: 700;
+}
+
+.school {
+    position: absolute;
+    top: 117%;
+    left: 10%;
+    color: black;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+
+.degree {
+    position: absolute;
+    top: 122%;
+    left: 10%;
+    color: black;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+.moreAboutMe {
+    position: absolute;
+    top: 132%;
+    left: 10%;
+    color: black;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+
+.interests {
+    position: absolute;
+    top: 127%;
+    left: 10%;
+    color: black;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+
+#skills {
+    width: 90%;
+    margin: 50px auto; /* Center the section */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
+    height: 40vh;
+
+}
+
+#skills h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 163%;
+    left: 48%;
+    color: #bc0000;
+    font-weight: 700;
+}
+
+.Languages {
+    position: absolute;
+    top: 174%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.Technologies{
+    position: absolute;
+    top: 178%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.SoftSkills{
+    position: absolute;
+    top: 182%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#portfolio {
+    width: 90%;
+    margin: 50px auto; /* Center the section */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
+    height: 350vh;
+
+}
+
+#portfolio h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 208%;
+    left: 44%;
+    color: #bc0000;
+    font-weight: 700;
+}
+
+
+.quizGame{
+    position: absolute;
+    top: 220%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    color: purple;
+    text-shadow:
+   /* 0 0 3px rgba(184, 152, 236, 0.7), *//* White glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Wider white glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Blue glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7);  */
+}
+.quizGameDescription{
+    position: absolute;
+    top: 226%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.quizGamePlay{
+    position: absolute;
+    top: 242%;
+    left: 45%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.quizGameNote{
+    position: absolute;
+    top: 247%;
+    left: 44%;
     color: black;
     font-size: 13px;
-    position: absolute;
-    top: 122%; /* Adjust as needed */
-    left: 37%; /* Center horizontally */
-    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+    font-weight: 100;
 }
 
-#Portfolio img {
+
+.quizGameImg {
     position: absolute;
-    top: 165%; /* Adjust as needed */
-    left: 44%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    width: 280px;
-    height: auto;
-    border: 5px solid black; /* 5px */
-    border-radius: 20px; /* 20px */
-    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
-    margin: 1.25rem; /* 20px */
+   top: 268%; /* Adjust as needed */
+   left: 50%; /* Adjust as needed */
+   transform: translate(-50%, -50%);
+   width: 340px;
+   height: auto;
+   border: 5px solid black; /* 5px */
+   border-radius: 20px; /* 20px */
+   box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+   margin: 1.25rem; /* 20px */
 }
 
-.playFlappy{
+
+
+
+.flappyBird{
+    position: absolute;
+    top: 290%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    color: purple;
+    text-shadow:
+   /* 0 0 3px rgba(184, 152, 236, 0.7), *//* White glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Wider white glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Blue glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7);  */
+}
+
+.flappyBirdDescription{
+    position: absolute;
+    top: 296%;
+    left: 10%;
     color: black;
-    font-size: 15px;
-    position: absolute;
-    top: 138%;
-    left: 47%;
-    font-weight: 600;
-    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.noteFlappy{
+
+.flappyBirdImg {
+    position: absolute;
+   top: 346%; /* Adjust as needed */
+   left: 50%; /* Adjust as needed */
+   transform: translate(-50%, -50%);
+   width: 340px;
+   height: auto;
+   border: 5px solid black; /* 5px */
+   border-radius: 20px; /* 20px */
+   box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+   margin: 1.25rem; /* 20px */
+}
+
+
+.flappyPlay{
+    position: absolute;
+    top: 317%;
+    left: 45%;
     color: black;
-    font-size: 9px;
-    position: absolute;
-    text-align: center;
-    top: 143%;
-    left: 47%;
-    font-weight: 600;
-    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 700;
 }
-
-.runnerHeading{
-    color: black;
+.flappyNote{
     position: absolute;
-    text-align: center;
-    font-size: 15px;
-    top: 190%;
-    left: 23%;
-    font-weight: 600;
-    transform: translateX(-50%);
-}
-
-.runnerBody{
+    top: 322%;
+    left: 44%;
     color: black;
     font-size: 13px;
+    font-weight: 100;
+}
+
+
+.UnityGame{
     position: absolute;
-    top: 195%; /* Adjust as needed */
-    left: 37%; /* Center horizontally */
-    transform: translateX(-50%);
+    top: 380%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    color: purple;
+    text-shadow:
+   /* 0 0 3px rgba(184, 152, 236, 0.7), *//* White glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Wider white glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7), *//* Blue glow *//*
+    0 0 3px rgba(184, 152, 236, 0.7); */
 }
 
-#Portfolio2 {
-    background-color: #FBE9E8;
-    padding: 5px;
-}
 
-.runnerPlay{
+.unityDescription{
+    position: absolute;
+    top: 385%;
+    left: 10%;
     color: black;
-    font-size: 15px;
-    position: absolute;
-    top: 212%;
-    left: 47%;
-    font-weight: 600;
-    transform: translateX(-50%); /* Move the element left by 50% of its own width */
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.runnerNote{
+.unityPlay{
+    position: absolute;
+    top: 406%;
+    left: 45%;
     color: black;
-    font-size: 9px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.unityNote{
     position: absolute;
-    text-align: center;
-    top: 217%;
-    left: 47%;
-    font-weight: 600;
-    transform: translateX(-50%);
+    top: 410%;
+    left: 44%;
+    color: black;
+    font-size: 13px;
+    font-weight: 100;
 }
 
-#Portfolio2 img {
-    position: absolute;
-    top: 236%; /* Adjust as needed */
-    left: 44%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    width: 280px;
-    height: auto;
-    border: 5px solid black; /* 5px */
-    border-radius: 20px; /* 20px */
-    box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
-    margin: 1.25rem; /* 20px */
+.unityGameImg {
+   position: absolute;
+   top:433%; /* Adjust as needed */
+   left: 50%; /* Adjust as needed */
+   transform: translate(-50%, -50%);
+   width: 365px;
+   height: auto;
+   border: 5px solid black; /* 5px */
+   border-radius: 20px; /* 20px */
+   box-shadow: 0 0 40px rgba(184, 152, 236, 1); /* 20px */
+   margin: 1.25rem; /* 20px */
 }
 
 .blenderHeading{
-    color: black;
     position: absolute;
-    text-align: center;
-    top: 260%;
-    left: 23%;
-    font-size: 15px;
-    font-weight: 600;
-    transform: translateX(-50%);
-}
-.blenderBody{
-    color: black;
-    font-size: 13px;
-    position: absolute;
-    top:265%; /* Adjust as needed */
-    left: 37%; /* Center horizontally */
-    transform: translateX(-50%);
+    top: 465%;
+    left: 10%;
+    font-size: 18px;
+    font-weight: 700;
+    color: purple;
+    text-shadow:
 }
 
-#Portfolio2 video {
+.blenderBody{
     position: absolute;
-    top: 300%; /* Adjust as needed */
-    left: 44%; /* Adjust as needed */
+    top: 470%;
+    left: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#portfolio video {
+    position: absolute;
+    top: 500%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%);
-    width: 280px;
+    width: 340px;
     height: auto;
     border: 5px solid black; /* 5px */
     border-radius: 20px; /* 20px */
@@ -250,7 +514,44 @@ body {
 }
 
 
+#contact {
+    width: 90%;
+    margin: 50px auto; /* Center the section */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 0, 188, 1); /* Color #D6C3F5 */
+    height: 40vh;
+
+}
+
+#contact h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 565%;
+    left: 48%;
+    color: #bc0000;
+    font-weight: 700;
+}
 
 
+.phoneNumber{
+    position: absolute;
+    top: 577%;
+    left: 47.3%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-shadow:
 
+}
 
+.email{
+    position: absolute;
+    top: 582%;
+    left: 44%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-shadow:
+
+}
