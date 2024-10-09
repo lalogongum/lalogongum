@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan Kerret Portfolio</title>
+    <title>Hasan kerret portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
@@ -89,7 +89,7 @@
     <p class="blenderBody">This Y2K-inspired 3D animated logo, meticulously crafted in Blender, captures</br>
         the essence of the early 2000s while infusing modern flair. It showcases my passion for blending nostalgia</br>
         with contemporary creativity.</p>
-    <video controls muted>
+    <video controls muted class="blenderVideo">
         <source src="animatedLogo.mp4" type="video/mp4">
         <!-- Add additional source elements for other video formats if needed -->
     </video>
@@ -105,6 +105,19 @@
         <img src="startScreen.png" alt="quizGame" class="quizGameImg">
     </a>
 
+    <p class = "maxMsp"> An Interactive Journey Through Space</p>
+    <p class ="maxMspDescription">In this Max MSP project, I created an interactive experience that</br>
+        simulates space exploration. Users can navigate through a virtual space environment filled with</br>
+        celestial objects like the Earth, Moon, and various rotating geometric shapes. The project responds to user input,</br>
+        allowing for movement and interaction with these objects as they float and rotate in a dynamic space setting. The design </br>
+        combines visual elements with spatial audio to enhance the feeling of immersion, providing an engaging and creative way to explore</br>
+        the cosmos in a digital environment.</p>
+
+    <video controls muted class="maxMspVideo">
+        <source src="maxMsp.mp4" type="video/mp4">
+        <!-- Add additional source elements for other video formats if needed -->
+    </video>
+
 </div>
 
 <div id="contact" class="section">
@@ -118,18 +131,6 @@ function scrollToAboutMe() {
     const aboutMeSection = document.getElementById('AboutMe');
     aboutMeSection.scrollIntoView({ behavior: 'smooth' });
 }
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 </script>
 <script src="script.js"></script>
 </body>
