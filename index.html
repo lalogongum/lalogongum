@@ -3,56 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Navbar</title>
+    <title>Hasan kerret portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-
 </head>
 <body>
 <div class="navbar" id="navbar">
     <a href="#home" class="active">Home</a>
-    <a href="#Portfolio">Portfolio</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
 </div>
 
 <div id="home" class="container">
     <p class="greeting">Hello!</p>
-    <p class="name">I'm Hasan</p>
-    <p class="aboutMe">A 3D artist and a full stack developer</p>
-    <img src="bigman.JPEG" alt="my handsome ass" class="styled-image">
-</div>
+    <p class="name">
+        <span class="Im">I'm</span> Hasan
+    </p>
 
-<div id="Portfolio" class="section">
-    <h1>My Portfolio</h1>
-    <p class="flappyHeading">Flappy bird clone</p>
-    <p class="flappyBody">Designed with three challenging levels, this Flappy Bird clone, powered by p5.js, promises an engaging experience. How high can you soar?</p>
-    <p class ="playFlappy"> Click below to play</p>
-    <p class ="noteFlappy"> Note: this is best played on desktop</p>
-    <p class ="runnerHeading"> Endless Runner</p>
-    <p class ="runnerBody">Crafted with the Unity engine, our game is an adrenaline-pumping 2D endless runner. Look out for extra health boosts as you dash, jump, and slide to set new high scores!</p>
-    <p class ="runnerPlay">Click below to play</p>
-    <a href="https://editor.p5js.org/lalogum/full/OH6kwALGw" target="_blank">
-        <img src="flappybird.png" alt="Description of the image">
+    <p class="aboutMe">
+        <span class="first-word">A</span> UX/UI designer <span class="last-word">and</span>
+    </p>
+    <p class="aboutMe2">full stack developer</p>
+    <button id="aboutMeButton" class="rounded-button" onclick="scrollToAboutMe()">About Me</button>
+    <img src="IMG_3184.jpg" alt="photo of me" class="styled-image">
+    <a href="https://www.tiktok.com/@_lalogum" target="_blank">
+        <img src="tiktok.png" alt="tiktok" class="tiktokImage">
+    </a>
+    <a href="https://www.linkedin.com/in/hasan-kerret-91b62532a/" target="_blank">
+        <img src="linkedin.png" alt="linkedin" class="linkedIn">
+    </a>
+    <a href="https://github.com/lalogongum/lalogongum" target="_blank">
+        <img src="github.png" alt="github" class="github">
+    </a>
+    <a href="https://www.instagram.com/lalogongum/?hl=de" target="_blank">
+        <img src="instagram.png" alt="instagram" class="instagram">
     </a>
 </div>
 
+<div id="AboutMe" class="section">
+    <h1>About Me</h1>
+    <p class="school"> &nbsp;&nbsp;&nbsp;~ Institution: York University, Lassonde School of Engineering </p>
+    <p class="degree"> &nbsp;&nbsp;&nbsp;~ Degree: Bachelor of Arts, Digital Media Development (2022 - Present) </p>
 
-<div id="Portfolio2" class="section">
-    <p class = "runnerNote">Note: This is best played on desktop</p>
+    <p class="moreAboutMe"> I’m currently pursuing a Bachelor of Arts in Digital Media Development at York University. I specialize<br/>
+        in creating engaging, interactive experiences through my skills in UX/UI design and full stack development. My background combines<br/>
+        technical proficiency and creative thinking, and I love building projects that bring these two worlds together.</p>
+    <p class="interests">&nbsp;&nbsp;&nbsp;~ Interests: Technology trends, Soccer, Fitness, generative arts.</p>
+</div>
+
+<div id="skills" class="section">
+    <h1> Skills </h1>
+    <p class="Languages">  &nbsp;&nbsp;&nbsp;~  Languages: C, Java, Python, JavaScript, SQL, HTML/CSS</p>
+    <p class="Technologies"> &nbsp;&nbsp;&nbsp;~ Technologies: Unity, SQL Servers, OOP, Databases, IntelliJ, VS Code, Figma, Unix, Max/MSP, Blender, Processing, Power Apps</p>
+    <p class="SoftSkills"> &nbsp;&nbsp;&nbsp;~ Soft Skills: Project management, team collaboration, Agile development, effective communication</p>
+</div>
+
+<div id="portfolio" class ="section">
+    <h1> My Portfolio</h1>
+    <p class ="flappyBird">&nbsp;&nbsp;&nbsp;~ Flappy Bird Game Clone (November 2023 - December 2023)</p>
+    <p class ="flappyBirdDescription"> Developed a Flappy Bird clone using p5.js, featuring gravity, pipe generation,</br>
+        collision detection, and a scoring system. The game includes multiple difficulty levels (Easy, Medium, Hard), </br>
+        custom sounds and images, an extra life power-up, and dynamic background animations for an enhanced player experience.</br>
+        Technologies used include JavaScript (p5.js), game mechanics, GUI elements,
+        and audio management.</p>
+    <a href="https://editor.p5js.org/lalogongum/full/OH6kwALGw" target="_blank">
+        <img src="flappybird.png" alt="flappybird" class="flappyBirdImg">
+    </a>
+    <p class ="flappyPlay">Click below to play</p>
+    <p class ="flappyNote">Note: this is best played on desktop</p>
+
+    <!-- Unity game code starts here -->
+    <p class ="UnityGame">&nbsp;&nbsp;&nbsp;~ Endless Runner Game (October 2023 - December 2023)</p>
+    <p class="unityDescription">Developed an endless runner game using Unity and C# as part of a project at York University,</br>
+        featuring coin collection, health pickups, and combat modes. Implemented endless level generation</br>
+        with varying obstacles and collectibles, designed intuitive controls, and created responsive gameplay</br>
+        to enhance user experience. Technologies used include Unity, C#, game design, UI/UX, and gameplay mechanics.</p>
+
+    <p class ="unityPlay">Click below to play</p>
+    <p class ="unityNote">Note: this is best played on desktop</p>
     <a href="https://hasan-kerret.itch.io/endless-runner" target="_blank">
-        <img src="endlessRunner.png" alt="Description of the image">
+        <img src="endlessRunner.png" alt="unityGame" class="unityGameImg">
     </a>
-     <p class ="blenderHeading">Animated Logo</p>
-     <p class="blenderBody">This Y2K-inspired 3D animated logo, meticulously crafted in Blender, captures the essence of the early 2000s while infusing modern flair. It showcases my passion for blending nostalgia with contemporary creativity.</p>
+
+    <p class ="blenderHeading">&nbsp;&nbsp;&nbsp;~ Animated Logo</p>
+    <p class="blenderBody">This Y2K-inspired 3D animated logo, meticulously crafted in Blender, captures</br>
+        the essence of the early 2000s while infusing modern flair. It showcases my passion for blending nostalgia</br>
+        with contemporary creativity.</p>
     <video controls muted>
         <source src="animatedLogo.mp4" type="video/mp4">
         <!-- Add additional source elements for other video formats if needed -->
-        Your browser does not support the video tag.
     </video>
 
+    <p class = "quizGame">&nbsp;&nbsp;&nbsp;~ Tick-Tock Trivia (September 2024 - October 2024)</p>
+    <p class = "quizGameDescription">Developed a geography quiz game using p5.js, featuring timed multiple-choice</br>
+        questions, score tracking, and sound effects for correct and incorrect answers. The game includes custom background</br>
+        images, a restart option, and a real-time timer for added challenge. Technologies used include JavaScript (p5.js), game logic,</br>
+        UI design, and audio integration.</p>
+    <p class="quizGamePlay">Click below to play</p>
+    <p class="quizGameNote">Note: This is best played on desktop</p>
+    <a href="https://editor.p5js.org/lalogongum/full/onQPxgfu5" target="_blank">
+        <img src="startScreen.png" alt="quizGame" class="quizGameImg">
+    </a>
 
 </div>
 
+<div id="contact" class="section">
+    <h1> Contact </h1>
+    <p class="phoneNumber">   +1 (437)-766-2928</p>
+    <p class="email"> Email: Hasankerret@gmail.com</p>
+</div>
+
+<script>
+function scrollToAboutMe() {
+    const aboutMeSection = document.getElementById('AboutMe');
+    aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 <script src="script.js"></script>
 </body>
 </html>
